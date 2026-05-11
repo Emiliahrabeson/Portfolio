@@ -24,10 +24,10 @@ const Contact = () => {
           <span>github.com/Emiliahrabeson</span>
         </a>
 
-        <a href="https://linkedin.com/..." className={styles.contact_item}>
+        {/* <a href="https://linkedin.com/..." className={styles.contact_item}>
           <FaLinkedin className={styles.contact_icon} />
           <span>linkedin.com/in/emi</span>
-        </a>
+        </a> */}
       </div>
     </div>
   );
