@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import me from "/src/assets/me.jpg";
+import me from "/src/assets/moi1.png";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
