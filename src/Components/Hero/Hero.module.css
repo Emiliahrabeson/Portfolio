@@ -1,0 +1,146 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary, #0a0a0f);
+  padding: 6rem 1.5rem 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero_me {
+  display: flex;
+  justify-content: center;
+}
+
+.hero_image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(168, 85, 247, 0.5);
+  background: linear-gradient(135deg, #1a0a2e, #2d1060);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titre {
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.accent {
+  color: rgba(168, 85, 247, 0.5);
+}
+
+.hero_desc {
+  max-width: 500px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.hero_btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn_outline,
+.btn_fill {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn_outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background: transparent;
+}
+
+.btn_outline:hover {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.btn_fill {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.btn_fill:hover {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero_tech_label {
+  font-size: 0.99rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0.5rem 0 0;
+}
+
+.hero_techs {
+  display: flex;
+  gap: 1.9rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero_tech_item {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.45);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hero_tech_item:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.links {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .titre {
+    font-size: 2rem;
+  }
+
+  .hero_techs {
+    gap: 1.2rem;
+  }
+}

@@ -1,0 +1,141 @@
+:root {
+  --accent: rgba(168, 85, 247, 0.5);
+  --nav-height: 90px;
+  --text-primary: #ffffff;
+  --text-muted: #aaaaaa;
+  --bg-glass: rgba(10, 10, 10, 0.88);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  padding-bottom: 35px;
+
+  background: transparent;
+  transition:
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.navbar--scrolled {
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar_links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 1000px;
+}
+
+.navbar_links li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.navbar_links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.navbar_links li a:hover {
+  color: var(--text-primary);
+}
+
+.navbar_links li a:hover::after {
+  width: 100%;
+}
+
+.navbar_links li a.active {
+  color: var(--text-primary);
+}
+
+.navbar_links li a.active::after {
+  width: 100%;
+}
+
+.navbar_actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_theme {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text-muted);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.nav_theme:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+  background: rgba(255, 107, 53, 0.08);
+}
+
+.navbar_open {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  line-height: 1;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.25rem;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+
+  .nav_theme {
+    display: none;
+  }
+
+  .navbar_open {
+    display: block;
+  }
+}
