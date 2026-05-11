@@ -1,4 +1,3 @@
-/* ── section wrapper ────────────────────────────────── */
 .project {
   min-height: 100vh;
   background: var(--bg-primary, #0a0a0f);
@@ -17,7 +16,6 @@
   margin-bottom: 1rem;
 }
 
-/* ── project card ───────────────────────────────────── */
 .project_cadre {
   display: flex;
   flex-direction: row;
@@ -35,7 +33,6 @@
   border-color: #a855f7;
 }
 
-/* ── image ──────────────────────────────────────────── */
 .project_cadre img {
   width: 280px;
   height: 200px;
@@ -43,7 +40,6 @@
   flex-shrink: 0;
 }
 
-/* ── text content ───────────────────────────────────── */
 .project_description {
   padding: 1.5rem 1.5rem 1.5rem 0;
   display: flex;
@@ -66,7 +62,6 @@
   line-height: 1.6;
 }
 
-/* ── tech tags ──────────────────────────────────────── */
 .tech {
   display: flex;
   flex-wrap: wrap;
@@ -93,8 +88,14 @@
   line-height: 1.7;
   margin: 0 0 2.5rem;
 }
-
-/* ── responsive ─────────────────────────────────────── */
+.contact_icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  color: #a855f7;
+}
+li {
+  list-style: none;
+}
 @media (max-width: 650px) {
   .project_cadre {
     flex-direction: column;

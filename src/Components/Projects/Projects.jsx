@@ -1,6 +1,8 @@
 import styles from "./Projects.module.css";
 import projet1 from "/src/assets/projet1.png";
+import projet2 from "/src/assets/projet2.png";
 import e_commerce from "/src/assets/e_commerce.png";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -23,6 +25,47 @@ const Projects = () => {
             <li>MySQL</li>
             <li>JWT</li>
           </ul>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Emiliahrabeson/Netflix_clone"
+                className={styles.tech}
+              >
+                <FaGithub className={styles.contact_icon} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className={styles.project_cadre}>
+        <img src={projet2} alt="projet2" />
+        <div className={styles.project_description}>
+          <p className={styles.titre}>Voip Web</p>
+          <p className={styles.explication}>
+            Application de messagerie instantanée et d'appels vocaux en temps
+            réel utilisant WebRTC et Socket.IO.
+          </p>
+          <ul className={styles.tech}>
+            <li>React</li>
+            <li>Express.js</li>
+            <li>Css</li>
+            <li>MySQL</li>
+            <li>JWT</li>
+            <li>Socket.IO</li>
+            <li>WebRTC</li>
+            <li>Node.js</li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Emiliahrabeson/Voip_web"
+                className={styles.tech}
+              >
+                <FaGithub className={styles.contact_icon} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -40,6 +83,18 @@ const Projects = () => {
             <li>Express.js</li>
             <li>Tailwind css</li>
             <li>MySQL</li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Emiliahrabeson/Ecommerce"
+                className={styles.tech}
+              >
+                <a href="https://github.com/Emiliahrabeson/Ecommerce">
+                  <FaGithub className={styles.contact_icon} />
+                </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

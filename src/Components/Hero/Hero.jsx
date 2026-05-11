@@ -9,7 +9,7 @@ const reseau = [
     label: "github",
     link: "https://github.com/Emiliahrabeson",
   },
-  { icon: <FaLinkedin />, label: "Linkedin", link: "#" },
+  // { icon: <FaLinkedin />, label: "Linkedin", link: "#" },
 ];
 
 const Hero = () => {

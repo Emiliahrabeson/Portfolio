@@ -12,10 +12,10 @@ const About = () => {
       <div className={style.content_about}>
         <div className={style.about_text}>
           <p className={style.text}>
-            As an Information Systems student, I have gained a strong foundation
-            in designing and developing modern web applications. Working across
-            both frontend and backend, I understand how different parts of a
-            system interact and communicate.
+            As an Licence 2 Information Systems student, I have gained a strong
+            foundation in designing and developing modern web applications.
+            Working across both frontend and backend, I understand how different
+            parts of a system interact and communicate.
           </p>
           <p className={style.text}>
             I am especially interested in backend development, focusing on
