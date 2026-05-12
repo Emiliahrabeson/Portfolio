@@ -1,24 +1,22 @@
 .about_container {
-  min-height: 100vh;
+  min-height: unset;
   background: var(--bg-primary, #0a0a0f);
-  padding: 6rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 0;
+  padding: 4rem 2rem;
 }
 
-/* ── section title ──────────────────────────────────── */
 .about_container::before {
   content: "About Me";
   font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: 800;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 0;
 }
 
-/* ── subtitle / intro ───────────────────────────────── */
 .about_me {
   max-width: 640px;
   text-align: center;
@@ -28,7 +26,6 @@
   margin: 0 0 2.5rem;
 }
 
-/* ── two-column layout ──────────────────────────────── */
 .content_about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,7 +35,6 @@
   align-items: start;
 }
 
-/* ── left: text block ───────────────────────────────── */
 .about_text {
   display: flex;
   flex-direction: column;
@@ -46,25 +42,23 @@
 }
 
 .text {
-  font-size: 19px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.85;
   margin: 0;
 }
 
-/* ── right: skill cards column ──────────────────────── */
 .cadre {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-/* ── single skill card ──────────────────────────────── */
 .bloc {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  padding: 50px 50px;
+  padding: 1.5rem;
   border: 1px solid white;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.03);
@@ -78,14 +72,12 @@
   background: rgba(40, 41, 41, 0.04);
 }
 
-/* ── icon ───────────────────────────────────────────── */
 .icon {
   font-size: 1.9rem;
   color: #a855f7;
   flex-shrink: 0;
 }
 
-/* ── card text ──────────────────────────────────────── */
 .cadre_petit {
   display: flex;
   flex-direction: column;
@@ -93,27 +85,30 @@
 }
 
 .titre_contenu {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
 }
 
 .text_contenu {
-  font-size: 15px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.45);
   margin: 0;
   line-height: 1.5;
 }
 
-/* ── responsive ─────────────────────────────────────── */
 @media (max-width: 768px) {
   .content_about {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .about_container::before {
-    font-size: 2rem;
+  .about_container {
+    padding: 5rem 1.25rem;
+  }
+
+  .text {
+    font-size: 15px;
   }
 }

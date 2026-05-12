@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--bg-primary, #0a0a0f);
-  padding: 6rem 1.5rem 4rem;
+  padding: 5rem 1.5rem 3rem;
 }
 
 .container {
@@ -23,8 +23,8 @@
 }
 
 .hero_image {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid rgba(168, 85, 247, 0.5);
@@ -41,7 +41,7 @@
 }
 
 .titre {
-  font-size: 80px;
+  font-size: clamp(2.2rem, 8vw, 80px);
   font-weight: 800;
   color: #ffffff;
   line-height: 1.1;
@@ -55,10 +55,11 @@
 
 .hero_desc {
   max-width: 500px;
-  font-size: 20px;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.8;
   margin: 0;
+  padding: 0 0.5rem;
 }
 
 .hero_btns {
@@ -102,13 +103,6 @@
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-.hero_tech_label {
-  font-size: 0.99rem;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.35);
-  margin: 0.5rem 0 0;
-}
-
 .hero_techs {
   display: flex;
   gap: 1.9rem;
@@ -131,16 +125,20 @@
   color: #ffffff;
   transform: translateY(-2px);
 }
+
 .links {
+  color: inherit;
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  .titre {
-    font-size: 2rem;
+@media (max-width: 480px) {
+  .hero_image {
+    width: 150px;
+    height: 150px;
   }
 
-  .hero_techs {
-    gap: 1.2rem;
+  .hero_btns {
+    flex-direction: column;
+    align-items: center;
   }
 }
